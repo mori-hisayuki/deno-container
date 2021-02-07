@@ -14,10 +14,7 @@
 	// Set *default* container specific settings.json values on container create.
 	"settings": {
 		"terminal.integrated.shell.linux": null,
-		"deno.enable": true,
-		"[typescript]": {
-			"editor.defaultFormatter": "denoland.vscode-deno"
-
+		"deno.enable": true
 	},
 
 	// remote接続先でインストールするExtension
