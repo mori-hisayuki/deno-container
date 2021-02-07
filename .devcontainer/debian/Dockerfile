@@ -15,6 +15,8 @@ RUN apt-get -y update \
 RUN echo "$USER_NAME ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers.d/${USER_NAME} \
     && chmod 0440 /etc/sudoers.d/$USER_NAME
 
+COPY --chown=${GROUP_NAME}:${USER_NAME} ./ssh /home/${USER_NAME}/.ssh
+
 USER ${USER_NAME}
 
 RUN curl -fsSL https://deno.land/x/install/install.sh | sh
@@ -24,3 +26,4 @@ ENV PATH=$DENO_INSTALL/bin:$PATH
 
 RUN mkdir /home/${USER_NAME}/${WORK_DIR}
 WORKDIR /home/${USER_NAME}/${WORK_DIR}
+RUN git clone git@github.com:mori-hisayuki/deno-sample.git /home/${USER_NAME}/${WORK_DIR}
