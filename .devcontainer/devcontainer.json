@@ -28,7 +28,6 @@
 		"esbenp.prettier-vscode",
 		"humao.rest-client",
 		"tabnine.tabnine-vscode",
-		"github.vscode-pull-request-github",
 		"streetsidesoftware.code-spell-checker"
 	],
 
