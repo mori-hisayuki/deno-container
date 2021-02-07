@@ -9,6 +9,11 @@
 |  |--docker-compose.yml
 |  |--debian
 |  |  |--Dockerfile
+|  |--ssh
+|  |  |--config
+|  |  |--github
+|  |  |--github.pub
+|  |  |--known_hosts
 |--.gitignore
 |--README.md
 ```
@@ -38,6 +43,7 @@
 - TabNine Autocomplete
 - GitHub Pull Requests and Issues
 - Code Spell Checker
+- Deno
 
 必要に応じて、追加削除をしてください。
 `devcontainer.json`の`extension`を編集
