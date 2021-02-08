@@ -13,8 +13,11 @@
 
 	// Set *default* container specific settings.json values on container create.
 	"settings": {
-		"terminal.integrated.shell.linux": null,
-		"deno.enable": true
+		"terminal.integrated.shell.linux": "/bin/bash",
+		"deno.enable": true,
+		"[typescript]": {
+			"editor.defaultFormatter": "denoland.vscode-deno",
+		}
 	},
 
 	// remote接続先でインストールするExtension
@@ -32,7 +35,7 @@
 		"streetsidesoftware.code-spell-checker",
 		"denoland.vscode-deno"
 	],
-
+	"appPort": [8080],
 	// remote接続先でのuser
 	"remoteUser": "vscode"
 }

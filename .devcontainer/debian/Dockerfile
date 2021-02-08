@@ -27,3 +27,5 @@ ENV PATH=$DENO_INSTALL/bin:$PATH
 RUN mkdir /home/${USER_NAME}/${WORK_DIR}
 WORKDIR /home/${USER_NAME}/${WORK_DIR}
 RUN git clone git@github.com:mori-hisayuki/deno-sample.git /home/${USER_NAME}/${WORK_DIR}
+
+COPY --chown=${GROUP_NAME}:${USER_NAME} ./.vscode /home/${USER_NAME}/${WORK_DIR}/.vscode
