@@ -29,7 +29,9 @@
 		"humao.rest-client",
 		"tabnine.tabnine-vscode",
 		"streetsidesoftware.code-spell-checker",
-		"denoland.vscode-deno"
+		"denoland.vscode-deno",
+		"svelte.svelte-vscode",
+		"bradlc.vscode-tailwindcss"
 	],
 	"appPort": [8080],
 	// remote接続先でのuser

@@ -7,7 +7,7 @@
 |  |--devcontainer.env
 |  |--devcontainer.json
 |  |--docker-compose.yml
-|  |--debian
+|  |--ubuntu
 |  |  |--Dockerfile
 |  |--ssh
 |  |  |--config
@@ -44,6 +44,11 @@
 - GitHub Pull Requests and Issues
 - Code Spell Checker
 - Deno
+
+## Svelteで遊ぶときのみ
+- Svelte for VS Code
+- Tailwind CSS IntelliSense
+
 
 必要に応じて、追加削除をしてください。
 `devcontainer.json`の`extension`を編集
