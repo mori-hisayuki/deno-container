@@ -65,17 +65,6 @@ RUN set -x \
     && mkdir -p /home/${USER_NAME}/.vscode-server/extensions \
     && chown -R vscode:vscode /home/${USER_NAME}/.vscode-server
 
-# install node14 & npm
-RUN set -x \
-    && apt-get -y update \
-    && curl -fsSL https://deb.nodesource.com/setup_14.x | bash - \
-    && apt-get install -y --no-install-recommends \
-    nodejs \
-    && apt-get clean && rm -rf /var/cache/apt/archives/* /var/lib/apt/lists/*
-
-# install yarn
-RUN npm install -g yarn
-
 USER ${USER_NAME}
 
 # deno
